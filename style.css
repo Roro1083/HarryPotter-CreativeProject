@@ -1,0 +1,178 @@
+.Welcome {
+    background-color: #112240;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    animation: fadeAway 1s 5s forwards;
+}
+
+.wand {
+    position: absolute;
+    width: 100px;
+    height: auto;
+    left: -100%;
+    top: 40%;
+    animation: move 5s;
+}
+
+@keyframes move {
+    from {left: -100%;}
+    to {left: 100%}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeAway {
+    from {opacity: 1;}
+    to {opacity: 0;
+    display: none;}
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    animation: fadeIn 1s 5s;
+}
+
+.skyBackground {
+    background-size: cover;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+.siteTitle {               
+    font-size: 80px;
+    font-family: 'Brush Script MT';
+    text-align: center;
+    background-color: #112240;
+    color: white;
+    font-weight: 200;
+    z-index: 1;
+    border-radius: 16px;
+    border: 2px solid gold;
+    width: fit-content;
+    padding: 25px;
+    margin: 20px auto;
+    max-width: 100%;
+}
+
+.icons {
+    display: flex;
+    background-color: #112240;
+    border-radius: 16px;
+    border: 2px solid gold;
+    width: fit-content;
+    margin: auto;
+    padding: 5px;
+    z-index: 5;
+}
+
+.icons img {
+    padding: 10px;
+    width: 70px;
+    transition: transform 0.3s;
+}
+
+.icons img:hover {
+    transform: scale(1.1);
+}
+
+section {
+    display: none;  
+    margin: auto;
+    margin-top: 20px;
+    width: 80%;
+    border-radius: 8px;
+    border: 2px solid gold;
+    background-color: #112240;
+    color: white;
+    text-align: center;
+    z-index: 2;
+    overflow: hidden;
+    padding: 20px;
+    margin-bottom: 200px;
+}
+
+section:target {   
+display: block;
+}
+
+section2 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 250px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+.image1, .image2 {
+    width: 225px;
+    padding: 20px;
+    margin: 5px;
+}
+
+h2 {
+    color: gold;
+    font-size: 40px;
+    margin-top: 10px;
+}
+
+p {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+a, a:hover, a:active, a:visited {
+    color: white;
+}
+
+footer {
+    font-size: 5px;
+    text-align: center;          
+    background-color: #112240; 
+    color: white;                
+    width: 100%;                 
+    position: fixed;           
+    bottom: 0;                  
+}
+
+@media (max-width: 718px) {
+    .siteTitle {
+        padding: 15px;
+        font-size: 250%;
+    }
+    section {
+        width: 90%;
+        padding: 10px;
+    }
+    section2 {
+        flex-direction: column;
+        margin-bottom: 330px;
+    }
+
+    .image1, .image2 {
+        margin: 0 auto 20px;
+        height: auto;
+    }
+    
+    h2 {
+        font-size: 200%;
+    }
+
+    p {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}

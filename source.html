@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Page Title</title>
+        <link rel="stylesheet" href="style.css">
+
+        <!--
+        For this assignment I made a website dedicated to one of my favorite book and movie series of all time: Harry Potter. 
+        I have been a passionate fan of the series for many years and thought it would be fun to express the magic of the series 
+        and my love for it through this project. In order to convey this magic, I decided to use a starry background, along with 
+        white and gold colors that complement each other and appeal to the user’s eye. To experiment with HTML and CSS, I chose 
+        to use icons that expand when hovered over, and showcase new information when clicked on. This is a much more dynamic 
+        way for the user to learn more about me and my interest, rather than simply being shown the information upon opening 
+        the site. Additionally, I included two visuals for each of my sections, which allows the user to better understand what 
+        I am speaking on, no matter their familiarity with the series. The most exciting element I learned to include is 
+        animating the wand to move across the screen and make the website appear, I think it really adds to the fantastical 
+        topic and catches the user’s attention. I had a lot of challenges with various components of the website, particularly 
+        with properly organizing the different sections (title, icons, information, and footer) vertically, especially in a 
+        responsive manner. Some of the sections would overlap each other and block each other from view in some or all layouts. 
+        For example, there were many cases where the information section would leave a big gap between itself and the icons 
+        above it. The footer would also block some of the last bits of text, so that they could not be read. However, by using 
+        flex through different divisions and groups of elements, I was able to create a satisfying display.
+
+        -->
+
+    </head>
+
+    <!-- This icon by MstNasima was found on Adobe Stock (https://stock.adobe.com/images/magic-wand-icon/348454401). A license was acquired for use.-->
+    <div class="Welcome">
+        <img src="img/MagicWand.png" alt=""Magic Wand Logo" class="wand" title=""Magic Wand">
+    </div>
+
+    <body>
+        <!-- This image was found on https://www.vecteezy.com/vector-art/5028791-night-sky-stars-falling-lullaby-wallpaper-blue-black-dark-background by creator venesiaagustian744914.-->
+        <img src="img/NightSky.jpg" alt="Starry night sky" class = skyBackground>
+
+        <main>
+            <header>
+                <h1 class="siteTitle"> My Hogwarts Highlights </h1>
+            </header>
+
+            <div class="icons">
+            <!-- This icon by Whitney Rosenberg was found on The Noun Project (https://thenounproject.com/icon/hufflepuff-crest-1704951/). This icon is licensed under Creative Commons. Icon's color inverted by me.-->
+                <a href="#About_Me"><img src="img/HufflePuff_Icon.png" alt="Huffelpuff Icon" title="About Me" /></a>
+            <!-- This icon by recognizeapp.com was found on Icons-Icons (https://icon-icons.com/icon/comedian-jester/87005). This icon is licensed under Creative Commons. Icon's color inverted by me.-->
+                <a href="#Ultimate_Faves"><img src="img/Jester_Hat_Icon.png" alt="Jester Hat Icon" title="Ultimate Favorites"/></a>
+            <!-- This icon by icons8 was found on IconsDB (https://www.iconsdb.com/white-icons/beer-icon.html). This icon is licensed under Creative Commons.-->
+                <a href="#Wizarding_Adventures"><img src="img/Butterbeer_Icon.png" alt="Butterbeer Icon" title="Wizarding Adventures"/></a>
+            </div>
+
+            <section id='About_Me'>
+                <h2> About Me </h2>
+                <section2>
+                <!-- This image was found on the Harry Potter Wiki (https://harrypotter.fandom.com/wiki/Hufflepuff). Hufflepuff crest is a trademark of Warner Bros. Entertainment Inc.-->
+                    <img src="img/Hufflepuff_ClearBG.webp" alt="Hufflepuff Crest" class="image1" title="Hufflepuff Crest"/></a>
+                <!-- This image was found on the Harry Potter Wiki (https://harrypotter.fandom.com/wiki/Hare). Hare patronus is a trademark of Warner Bros. Entertainment Inc.-->
+                    <img src="img/Patronus_Hare.webp" alt="Brown Hare Patronus" class="image2" title="Brown Hare Patronus"/></a>
+                </section2>
+                <p>
+                    Hello, my name is Rawan! I am a member of the house of Hufflepuff, one of the four houses of Hogwarts. 
+                    This house, founded by Helga Hufflepuff, values loyalty, patience, hard work, and dedication. 
+                    My house's mascot is a badger, and my house's signature colors are black and yellow. 
+                    The patronus (or defensive spell that takes the appearance of an animal) I connect with most is the 
+                    brown hare, which is associated with patience, intelligence, and shyness.
+                    If I really was a student at Hogwarts School of Witchcraft and Wizardry, I would be most interested in 
+                    Charms (or spellcasting) and broom flying.
+                </p>
+            </section>
+        
+            <section id="Ultimate_Faves">
+                <h2> Ultimate Faves </h2>
+                <section2>
+                <!-- This image was found on the Wizarding World website (https://www.wizardingworld.com/features/your-wizarding-world-interview-with-james-and-oliver-phelps-the-weasley-twins). © Warner Bros. Entertainment Inc. Used here for educational purposes.-->
+                    <img src="img/WeasleyTwins.jpg" alt="Weasley Twins" class="image1" title="The Weasley Twins"/></a>
+                <!-- This image was found on the Harry Potter Wiki (https://harrypotter.fandom.com/wiki/Hermione_Granger%27s_wand). Hermione's wand is a trademark of Warner Bros. Entertainment Inc.-->
+                    <img src="img/Hermione_Wand.webp" alt="Hermione Granger's Wand" class="image2" title="Hermione Granger's Wand"/></a>
+                </section2>
+                <p>
+                    These are my ultimate favorites from the Harry Potter universe! My top characters are George and Fred Weasley, 
+                    identical twin brothers known for their brilliantly mischievous pranks and the founders of their joke shop 
+                    Weasley's Wizarding Wheezes in the streets of Diagon Alley. My favorte wand belongs to Hermione Granger, I 
+                    absolutely love the vine pattern since I am a big fan of anything with plant designs. It's hard to choose my 
+                    favorite book out of all 7, but my top two are "Harry Potter and the Goblet of Fire" and "Harry Potter and the 
+                    Order of the Phoenix". Not only are both books packed with exciting details about Harry and his friend's adventures, 
+                    entertaining and captivting the reader, but also mark a high point for one of the most important arcs of the 
+                    series: the return of the evil wizard Voldemort.
+                </p>
+            </section>
+        
+            <section id="Wizarding_Adventures" >
+                <h2> Wizarding Adventures </h2>
+                <section2>
+                <!-- This image was taken by my cousin, Ameer Jaber.-->
+                    <img src="img/Rawan_Weasley.jpeg" alt="Me at Weasley's Wizarding Wheezes at Universal Orlando" class="image1" title="Me visiting Weasley's Wizarding Wheezes at Universal Orlando!"/></a>
+                <!-- This image was taken by my mom, Najah Rabie.-->
+                    <img src="img/Rawan_Robe.jpeg" alt="Me wearing a Hufflepuff robe" class="image2" title="Me wearing a Hufflepuff robe!"/></a>
+                </section2>
+                <p>
+                    My most memorable wizarding adventures have been my trips to Harry Potter World in both Universal Studios
+                    Hollywood and Orlando. The experience of immersing myself in the magical world that I've grown to love and 
+                    form strong connections with over the years was exciting and heart-warming. I particularly enjoyed the size 
+                    of Harry Potter world in Orlando since it includes two giant halves of one whole spread across the two parks 
+                    (such as the infamous streets of Diagon Alley) and even the opportunity to ride the Hogwarts Express train in 
+                    between the parks! I also really liked trying the butterbeer, a sweet and fizzy non-alcoholic drink from the series with 
+                    a butterscotch foam on top.       
+                </p>
+            </section>
+
+        </main>
+
+        <footer>
+            <p>
+                &copy; Rawan Dirhalleh, Harry Potter &copy; Warner Bros. Entertainment Inc | Background from <a href="https://www.vecteezy.com/vector-art/5028791-night-sky-stars-falling-lullaby-wallpaper-blue-black-dark-background">Vecteezy.com</a> by venesiaagustian744914
+            </p>
+        </footer>
+    </body>
+</html>
